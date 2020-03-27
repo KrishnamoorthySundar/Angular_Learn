@@ -9,8 +9,7 @@ import {CoursesService} from './courses.service';
 export class AppComponent {
   title = 'Angular course';
   courses: string[];
-  constructor() {
-    const service = new CoursesService();
+  constructor(service: CoursesService) {
     this.courses = service.getCourses();
   }
 }
