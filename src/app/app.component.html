@@ -1,5 +1,8 @@
 <html>
   <body>
-    <p>Title: + {{title}}</p>
+    <p>{{title}}</p>
+    <ul>
+      <li *ngFor="let course of courses">{{course}}</li>
+    </ul>
   </body>
 </html>
